@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+*{margin:0; padding:0}
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: "Leckerli One", 'san-serif';
+}
+
+main{
+  width: 100%; height: 100%;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+}
+main::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top:0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0) 30%);
+}
+
+section{
+  width: 50%; height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/*왼쪽 섹션*/
+section.left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+  color: #fff;
+}
+
+p.today{
+  font-size: 40px;
+}
+h1{
+  font-size: 100px;
+}
+p.quote{
+  font-size: 24px;
+  text-shadow: 0 0 10px #000;
+}
+
+/*오른쪽 섹션*/
+section.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  padding-right: 60px;
+}
+section.right>.wrap{
+  max-width: 600px;
+  padding: 60px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 40px;
+}
+
+.hidden{
+  display: none;
+}
+
+.greeting{
+  font-size: 40px;
+}
+
+#todoList{
+  margin-top: 30px;
+}
+
+li{
+  list-style: none; font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.check-box{
+  display: inline-block;
+  width: 18px; height: 18px;
+  outline: none;
+  border: 2px solid #54E940;
+  border-radius: 4px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.checked{
+  width: 18px; height: 18px;
+  background-image: url(./images/checked.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.font-gray{
+  color:#ccc;
+}
+
+button{
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.trash{
+  width: 16px; height: 16px;
+  background-image: url(./images/trash-xmark.svg);
+  background-repeat: no-repeat;
+  outline: none;
+  border: none;
+  margin-left: 6px;
+}
+
+.wrap-dot{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin: 30px 0;  
+}
+.wrap-dot>.dot{
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+form>input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.logout{
+  max-width: 600px;
+  height: 34px;
+  line-height: 34px;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0);
+  outline: none;
+  border: none;
+  text-decoration: underline;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-shadow: 0 0 10px #000;
+}
+
+
+

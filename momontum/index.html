@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentum</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <section class="left">
+      <p class="today"></p>
+      <h1 class="clock">00:00:00</h1>
+      <p class="quote">
+        <span></span><br>
+        <span></span>
+      </p>  
+      <button class="mode hidden">테마모드</button>
+    </section>
+    <section class="right">
+      <div class="wrap">
+        <div class="wrap-user">
+          <p class="greeting">
+            Welcome😊!<br>
+            <span><strong>당신은 누구</strong>인가요?</span></p>
+        </div>
+        <ul id="todoList" class="hidden"></ul>
+        <div class="wrap-dot">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <form id="todoForm" class="hidden">
+          <input type="text" placeholder="여기에 할일을 작성후 Enter 로 추가하세요" required>
+        </form>
+        <form id="loginForm">
+          <input type="text" placeholder="사용할 닉네임 입력 후 Enter" required autocomplete="on" autofocus>
+        </form>
+      </div>
+      <button class="logout hidden">로그아웃 할래요</button>
+    </section>
+  </main>
+  <script src="./script/login.js"></script>
+  <script src="./script/quotes.js"></script>
+  <script src="./script/clock.js"></script>
+  <script src="./script/background.js"></script>
+</body>
+</html>

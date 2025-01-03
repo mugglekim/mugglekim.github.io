@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+*{margin:0; padding:0;}
+a{text-decoration: none; color: inherit; display: block;}
+li{list-style: none;}
+
+body{
+  color: #222;
+}
+
+header{
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+.gnb{
+  width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 0;
+}
+
+.logo>a>img{
+  width: 120px;
+}
+
+.top-banner{
+  margin-left: auto;
+}
+
+.login{
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  text-align: center;
+}
+.login>a>img{
+  width: 36px;
+}
+
+/* nav 영역 */
+nav{
+  width: 980px;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.menu-wrap{
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+}
+.btn-menu{
+  width: 50px; height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+.btn-menu>a>img{
+  width: 30px;
+}
+
+/* 메뉴 와이드 부분 */
+.menu-wide{
+  width: 100%; height: 600px;
+  position: absolute;
+  top: 100%; left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 13px;
+  padding: 50px; box-sizing: border-box;
+  z-index: 2;
+}
+.menu-wide a{
+  padding: 4px 0;
+}
+.menu-wide>li{
+  width: 140px;
+}
+.menu-wide>li>a{
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.box-menu{
+  color: #777;
+}
+
+.nav-bg-total{
+  width: 100%; height: 600px;
+  background-color: #fff;
+  box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2);
+  top:0; left: 0;
+}
+
+/* 메뉴 바 부분 */
+.nav-bar{
+  display: flex;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+.nav-bar a{
+  padding: 12px;
+}
+
+.main-menu:hover>a{
+  color: #fb4357;
+}
+.main-menu>a{
+  font-weight: 600;
+}
+
+.sub-menu{
+  width: 80%; height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 100%; left: 0;
+  font-size: 13px;
+}
+.sub-menu>li>a:hover{
+  text-decoration: underline;
+}
+
+.nav-bg{
+  width: 100%; height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* 검색부분 */
+.search{
+  position: absolute;
+  top: 50%; right: 0;
+  transform: translateY(-50%);
+  width: 200px; height: 26px;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  display: flex;
+  padding: 0 10px; box-sizing: border-box;
+}
+.search>input{
+  width: 90%;
+  border: none;
+}
+.search>label>img{
+  width: 26px;
+  cursor: pointer;
+}
+
+
+/* 메인 슬라이드 영역 */
+.slide{
+  width: 100%; height: 600px;
+  border-top: 2px solid #fb4357;
+  background-image: url(../images/slide-bg1.jpg);
+  background-position: center;
+  background-size: cover;
+}

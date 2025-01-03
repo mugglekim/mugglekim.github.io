@@ -1,0 +1,606 @@
+@charset "utf-8";
+
+*{margin: 0; padding: 0;}
+a{text-decoration: none; color: inherit;}
+li{list-style: none;}
+
+/* main */
+
+/* header */
+header{
+  width: 100%; height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4rem;
+  box-sizing: border-box;
+}
+
+header>nav>ul{
+  display: flex;
+  width: 270px;
+}
+
+header .main-menu{
+  gap: 4rem;
+}
+
+header .side-menu{
+  gap: 2rem;
+  justify-content: flex-end;
+}
+header .side-menu img{
+  height: 2rem;
+}
+
+.m-header{
+  display: none;
+}
+
+/* main-img */
+.main-visual{
+  width: 100%; height: 90rem;
+  background-image: url(./images/01-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.main-visual>.txt{
+  width: 50%;
+  position: relative;
+  top: 50%; left: 50%;
+  color: #fff;
+  transform: translateY(-50%);
+}
+.main-visual>.txt>p:first-child{
+  font-size: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+.main-visual>.txt>p:last-child{
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+/* tent section */
+.campers-pick{
+  width: 90%;
+  margin: 12rem auto 4rem;
+}
+.campers-pick>h2{
+  font-size: 6.4rem;
+}
+
+.campers-img{
+  width: 100%; height: 90rem;
+  background-image: url(./images/02.jpg);
+  background-position: bottom;
+  background-size: cover;
+  color: var(--color-main);
+  border-radius: 2rem;
+  padding: 12rem 0 9rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 6rem 0 4rem;
+}
+.campers-img>.txt>p:first-child{
+  font-size: 6.4rem;
+  margin-bottom: 1.6rem;
+}
+.campers-img>.txt>p:last-child{
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.tent-item{
+  width: 90%; height: 60rem;
+  margin: 0 auto;
+  position: relative;
+}
+.item-btn>img{
+  position: absolute;
+  top: 50%;
+  width: 5rem; height: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+  transform: translateY(-50%);
+  padding: 14px;
+  box-sizing: border-box;
+}
+
+.item-btn>img:hover{
+  filter: invert(100%);
+}
+.item-btn>img:nth-child(1){
+  left: 2rem;
+}
+.item-btn>img:nth-child(2){
+  right: 2rem;
+}
+
+.box-slide{
+  width: 100%; height: 60rem;
+  overflow: hidden;
+}
+
+.item-box{
+  width: calc(34.2%*8); height: 100%;
+  display: flex;
+}
+
+.item-box>li{
+  width: 33.3%; height: 60rem;
+  background-color: var(--color-bg);
+  border-radius: 2rem;
+  padding-bottom: 6rem;
+  box-sizing: border-box;
+  margin-right: 1%;
+}
+
+.item-box>li>a{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6rem;
+}
+.item-box>li>a>img{
+  width: 100%;
+}
+.item-box .txt{
+  padding: 0 40px;
+}
+.item-box .txt>p:first-child{
+  font-size: 2.4rem;
+}
+.item-box .txt>p:last-child{
+  font-size: 1.6rem;
+}
+
+/* item-box hover 공통 스타일 */
+.item-box>li:hover{
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-shadow: 0 0 10px black;
+}
+.item-box>li:hover>a>img{
+  visibility: hidden;
+}
+
+/* item-box hover 개별 back img */
+.item-box>li:nth-child(1):hover{
+  background-image: url(./images/03-01.jpg);
+}
+.item-box>li:nth-child(2):hover{
+  background-image: url(./images/03-02.jpg);
+}
+.item-box>li:nth-child(3):hover{
+  background-image: url(./images/03-03.jpg);
+}
+.item-box>li:nth-child(4):hover{
+  background-image: url(./images/03-04.jpg);
+}
+.item-box>li:nth-child(5):hover{
+  background-image: url(./images/03-05.jpg);
+}
+.item-box>li:nth-child(6):hover{
+  background-image: url(./images/03-06.jpg);
+}
+.item-box>li:nth-child(7):hover{
+  background-image: url(./images/03-07.jpg);
+}
+.item-box>li:nth-child(8):hover{
+  background-image: url(./images/03-08.jpg);
+}
+
+/* promotion section */
+.promotion{
+  width: 90%;
+  margin: 12rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  clear: both;
+}
+.promotion>h2{
+  font-size: 6.4rem;
+}
+
+.promotion-box{
+  width: 100%;
+  color: var(--color-main);
+  margin: 6rem 0 4rem;
+}
+.promotion-box>ul{
+  position: relative;
+  width: 49%;
+  background-image: url(./images/04-04-1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  padding: 4rem; box-sizing: border-box;
+}
+.promotion-list{
+  padding: 26px 0;
+  border-bottom: 1px solid var(--color-main);
+}
+
+.promotion-list:last-child{
+  border-bottom: none;
+}
+
+.promotion-list>a>p:first-child{
+  font-size: 2.4rem;
+}
+
+.promotion-list>a>p:last-child{
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.promotion-list:hover>a>p:last-child>span{
+  opacity: 1;
+}
+.promotion-list>a>p:last-child>span{
+  display: inline-block;
+  width: 2rem; height: 2rem;
+  background-color: var(--color-main);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.promotion-img{
+  position: absolute;
+  top: 0; left: 104%;
+  width: 100%; height: 100%;
+  background-image: url(./images/04-01-2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 2rem;
+  padding: 4rem; box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.promotion-box>ul>li:first-child>ul{
+  opacity: 1;
+}
+
+/* 프로모션 리스트 hover */
+.promotion-list:hover>.promotion-img{
+  opacity: 1;
+}
+.promotion-box>ul>li:nth-child(2)>ul{
+  background-image: url(./images/04-02-2.jpg);
+}
+
+.promotion-box>ul>li:nth-child(3)>ul{
+  background-image: url(./images/04-03-2.jpg);
+}
+.promotion-box>ul>li:nth-child(4)>ul{
+  background-image: url(./images/04-04-2.jpg);
+}
+
+/* insta feed section */
+
+.feed{
+  width: 100%; height: 100%;
+  background-color: var(--color-bg);
+  padding: 12rem 0;
+}
+.feed-wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+.feed-wrap>h2{
+  font-size: 6.4rem;
+  margin-bottom: 6rem;
+}
+
+.feed-box1, .feed-box2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.333%;
+  margin-bottom: 1.333%;
+}
+
+.feed-wrap>div>div{
+  width: 24%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.feed-wrap>div>div::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.feed-wrap>div img{
+  width: 100%; height: 100%;
+  position: absolute;
+}
+.feed-wrap>div img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.feed-box1>div:last-child{
+  margin-right: auto;
+}
+.feed-box2>div:first-child{
+  margin-left: auto;
+}
+
+.feed-wrap>p{
+  font-size: 4rem;
+  position: absolute;
+  float: left;
+}
+
+/* footer */
+footer{
+  width: 90%;
+  margin: 12rem auto 6rem;
+}
+footer>div{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+footer>div>p{
+  font-size: 4rem;
+  width: 50%;
+}
+
+.f-menu{
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+.f-menu>img{
+  height: 32rem;
+}
+.f-menu>img:last-child{
+  transform: rotate(180deg);
+}
+.f-menu>ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.f-main-menu{
+  width: 40%;
+}
+.f-main-menu>a{
+  font-size: 2.4rem;
+}
+.f-sub-menu{
+  font-weight: 300;
+}
+.f-sub-menu>li{
+  padding: 0.6rem;
+}
+
+footer>p{
+  border-top: 2px solid var(--color-font);
+  margin-top: 6rem;
+  padding-top: 2rem;
+}
+
+/****** 중간 사이즈 1200px ******/
+@media screen and (max-width:1280px){
+  html{
+    font-size: 50%;
+  }
+  /* tent item */
+  .tent-item{
+    height: 50rem;
+    position: relative;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+
+  .item-btn>img{
+    padding: 12px;
+  }
+  
+  .item-box>li{
+    height: 50rem;
+    padding-bottom: 5rem;
+  }
+  .item-box>li>a{
+    gap: 0;
+  }  
+}
+
+
+/****** 모바일 사이즈 680px ******/
+@media screen and (max-width: 860px){
+  html{
+    font-size: 43.7%;
+  }
+
+  /* header */
+  header{
+    display: none;
+  }
+  .m-header{
+    display: inline-block;
+    width: 100%; height: 80px;
+    padding: 0 4rem;
+    box-sizing: border-box;
+  }
+  .m-header>nav{
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .m-header>nav>ul{
+    display: flex;
+    gap: 2rem;
+  }
+  .m-header>nav img{
+    height: 3.6rem;
+  }
+
+  /* tent item */
+  .tent-item{
+    height: 50rem;
+    position: relative;
+    margin-left: 5%;
+    overflow: hidden;
+  }
+
+  .item-btn>img{
+    display: none;
+  }
+
+  .item-box{
+    width: calc(52%*8);
+  }
+  
+  .item-box>li{
+    width: 50%;
+    padding-bottom: 4rem;
+  }
+
+  /* promotion */
+  .promotion-img{
+    display: none;
+  }
+  .promotion-box>ul{
+    position: relative;
+    width: 100%;
+    background-image: none;
+    padding: 0;
+  }
+
+  .promotion-list{
+    width: 100%; height: 60rem;
+    padding: 4rem;
+    border-bottom: none;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+  }
+  .promotion-list:after{
+    content: "";
+    display: inline-block;
+    width: 8rem; height: 8rem;
+    background-image: url(./svg/plus.svg);
+    background-size: contain;
+    position: absolute;
+    bottom: 4rem; right: 4rem;
+    cursor: pointer;
+  }
+
+  .promotion-list:last-child{
+    border-bottom: none;
+  }
+  
+  .promotion-list:hover>a>p:last-child>span{
+    display: none;
+  }
+
+  .promotion-box>ul>li:nth-child(1){
+    background-image: url(./images/04-01-1.jpg);
+  }
+  .promotion-box>ul>li:nth-child(2){
+    background-image: url(./images/04-02-1.jpg);
+  }
+  .promotion-box>ul>li:nth-child(3){
+    background-image: url(./images/04-03-1.jpg);
+  }
+  .promotion-box>ul>li:nth-child(4){
+    background-image: url(./images/04-04-1.jpg);
+  }
+
+  /* feed */
+  .feed{
+    padding: 12rem 0 18rem;
+  }
+  .feed-box2{
+    display: none;
+  }
+  .feed-wrap>div>div:last-child{
+    display: none;
+  }
+  .feed-wrap>div>div{
+    width: 48%;
+  }
+
+  .feed-wrap>p{
+    font-size: 4rem;
+    margin: 2rem 0;
+  }
+
+  /* footer */
+  footer>div{
+    flex-direction: column;
+  }
+  
+  footer>div>p{
+    text-align: center;
+    width: 100%;
+  }
+
+  .f-menu{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 6rem 0 4rem;
+  }
+  .f-menu>img{
+    display: none;
+  }
+
+  .f-menu>ul{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  
+  .f-main-menu{
+    width: 16%;
+  }
+
+}
+
+@media screen and (max-width: 640px){
+  main{
+    min-width: 460px;
+  }
+
+  .tent-item{
+  height: 40rem;
+  }
+
+  .item-box{
+    width: calc(52%*8);
+  }
+  
+  .item-box>li{
+    width: 50%; height: 40rem;
+    padding-bottom: 4rem;
+  }
+}

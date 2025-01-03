@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans+KR:wght@300,500&display=swap');
+
+.noto-sans-kr-300{
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.noto-sans-kr-500{
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.libre-caslon-text-regular {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-caslon-text-bold {
+  font-family: "Libre Caslon Text", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+html{
+  font-size: 62.5%; /*폰트 사이즈를 10px로 지정*/
+  scroll-behavior: smooth;
+}
+
+:root{
+  /*** color ***/
+  --color-bg: #f4f3ed;
+  --color-main: #ffd204;
+  --color-font: #222;
+}
+
+body{
+  background-color: #fff;
+  color: var(--color-font);
+  font-family: "Noto Sans KR", serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+
+/* 애니메이션 버튼 */
+.act-btn{
+  border: none;
+  background-color: transparent;
+}
+
+.act-btn:hover>a{
+  animation-name: wide;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes wide {
+  0%{gap: 2rem;}
+  100%{gap: 4rem;}
+}
+
+.act-btn>a{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.act-btn>a>img{
+  height: 4rem;
+}
+.act-btn>a>img:last-child{
+  transform: rotate(180deg);
+}
+.act-btn>a>p{
+  font-size: 2.4rem;
+  display: flex;
+  gap: 2rem;
+}
+.act-btn>a>p>img{
+  height: 2.8rem;
+}
