@@ -135,7 +135,7 @@ main>section>p{
   font-size: 6rem;
 }
 .homme>p:nth-child(2){
-  background-image: url(../images//m1.jpg);
+  background-image: url(../images/m1.jpg);
 }
 .homme>p:nth-child(3), .homme>p:nth-child(11){
   background-color: #333;
@@ -144,17 +144,17 @@ main>section>p{
   background-color: #666;
 }
 .homme>p:nth-child(5){
-  background-image: url(./images//m3.jpg);
+  background-image: url(./images/m3.jpg);
   background-size: contain;
   background-position: left center;
 }
 .homme>p:nth-child(6){
   grid-row: 2/span 2;
   grid-column: 3/span 2;
-  background-image: url(./images//m2.jpg);
+  background-image: url(./images/m2.jpg);
 }
 .homme>p:nth-child(7){
-  background-image: url(./images//m4.jpg);
+  background-image: url(./images/m4.jpg);
 }
 .homme>p:nth-child(8), .homme>p:nth-child(9){
   background-color: #444;
@@ -162,7 +162,7 @@ main>section>p{
 .homme>p:nth-child(10){
   grid-row: 4;
   grid-column: 2/span 2;
-  background-image: url(./images//m5.jpg);
+  background-image: url(./images/m5.jpg);
 }
 
 /* girl */
