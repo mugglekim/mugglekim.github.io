@@ -588,7 +588,7 @@ footer>p{
 
 @media screen and (max-width: 640px){
   main{
-    min-width: 460px;
+    min-width: 360px;
   }
 
   .tent-item{
