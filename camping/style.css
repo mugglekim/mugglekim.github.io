@@ -128,7 +128,7 @@ header .side-menu img{
 }
 
 .item-box{
-  width: calc(34.2%*8); height: 100%;
+  width: calc(34.2%*9); height: 100%;
   display: flex;
 }
 
@@ -196,6 +196,9 @@ header .side-menu img{
 }
 .item-box>li:nth-child(8):hover{
   background-image: url(./images/03-08.jpg);
+}
+.item-box>li:nth-child(9):hover{
+  background-image: url(./images/03-01.jpg);
 }
 
 /* promotion section */
@@ -475,6 +478,7 @@ footer>p{
 
   .item-box{
     width: calc(52%*8);
+    overflow: scroll;
   }
   
   .item-box>li{
