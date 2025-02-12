@@ -135,7 +135,7 @@ main>section>p{
   font-size: 6rem;
 }
 .homme>p:nth-child(2){
-  background-image: url(../images/m1.jpg);
+  background-image: url(./images/m1.jpg);
 }
 .homme>p:nth-child(3), .homme>p:nth-child(11){
   background-color: #333;
