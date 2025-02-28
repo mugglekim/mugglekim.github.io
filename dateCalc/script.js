@@ -72,18 +72,31 @@ const calcTime=()=>{
   document.querySelector('.n-times').textContent=`남은 시간 : ${reDays}일 ${reHour}시간 ${reMinute}분 ${reSecond}초`;
   document.querySelector('.time').textContent=`현재 날짜 ${today.toLocaleString()}`;
 }
+// const init=()=>{
+//   //처음 실행되는 함수
+//   addSelectOpt(); //1.select 에 option을 추가
+//   //2.option에 현재 날짜가 보여지도록
+//   //제일 하단에 현재 시간도 표시
+//   setTodayAsDefault();
+//   //3. 남은시간 계산
+//   //언제 실행이 되어야 할까요? 결과보기 버튼을 눌렀을 때 실행이 되어야 함
+//   const resultElem=document.querySelector('button');
+//   resultElem.addEventListener('click',calcTime);
+//   // calcTime();
+//   setInterval(calcTime,1000);
+// }
 const init=()=>{
-  //처음 실행되는 함수
-  //1.select 에 option을 추가
-  addSelectOpt();
-  //2.option에 현재 날짜가 보여지도록
-  //제일 하단에 현재 시간도 표시
-  setTodayAsDefault();
-  //3. 남은시간 계산
-  //언제 실행이 되어야 할까요? 결과보기 버튼을 눌렀을 때 실행이 되어야 함
+  // 처음 실행되는 함수
+  addSelectOpt(); // select에 option 추가
+  setTodayAsDefault(); // 현재 날짜를 기본값으로 설정
+
+  // 결과보기 버튼 클릭 시 남은 시간 계산 실행
   const resultElem=document.querySelector('button');
-  resultElem.addEventListener('click',calcTime);
-  // calcTime();
-  setInterval(calcTime,1000);
+  resultElem.addEventListener('click', () => {
+    calcTime();
+    // 버튼을 누른 후 1초마다 갱신 (한 번 눌러야만 실행됨)
+    setInterval(calcTime, 1000);
+  });
 }
+
 window.onload=init;
